@@ -4,4 +4,3 @@ export const Bio = {
 }
 
 export const Test = 3;
-

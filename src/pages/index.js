@@ -1,5 +1,5 @@
 import React from "react";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import MikeInOsaka from "../images/Mike-In-Osaka.jpg";
 import Navbar from "../components/navbar.js";
 import FooterSelfmade from "../components/FooterSelfmade.js";
@@ -15,8 +15,7 @@ import ResumeFile from '../data/Fake-resume.pdf'
 import 'tachyons';
 
 
-export default function Home() {
-  return ( 
+const Home = () => ( 
   	<div className=''>
   		<Navbar />
   		<section id='intro' className = "pa3 center">
@@ -56,11 +55,6 @@ export default function Home() {
   		<FooterSelfmade /> 
   	</div>
   );
-}
 
 
-      // <About />
-      // <Projects />
-      // <Contact />
-      // <Footer />
-
+export default Home;
