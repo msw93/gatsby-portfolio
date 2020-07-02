@@ -8,7 +8,7 @@
 
 
 module.exports = {
-
+  //pathPrefix: "/gatsby-portfolio",
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
@@ -31,4 +31,5 @@ module.exports = {
   ]
 
 }
+
 
