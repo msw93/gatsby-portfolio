@@ -7,4 +7,7 @@
 <h1 align="center">
   Personal Portfolio made with Gatsby!
 </h1>
+<p>
+	Done with gatsby, graphql, styling done Tachyons.
+</p>
 
