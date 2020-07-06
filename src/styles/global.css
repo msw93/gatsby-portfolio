@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 body {
-	font-family: courier;
+	font-family: 'Kanit', sans-serif;
+	/*font-family: 'Roboto', sans-serif;;*/
   background-color: #eefbfb;
   font-size: 1.2rem;
 }
@@ -22,7 +25,7 @@ body {
 }
 
 img {
-	border: 5px black solid;
+	/*border: 5px black solid;*/
 	border-radius: 5px;
 }
 
@@ -80,7 +83,7 @@ footer {
 	position: fixed;
   	right: 0;
   	bottom: 0;
-  /*width: 100%;*/
+  /*width: 100%;*
 	/*text-align: center;*/
 }
 

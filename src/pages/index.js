@@ -21,17 +21,23 @@ const Home = () => (
   		<section id='intro' className = "pa3 center">
   		  <Textbox>
   				<Fade className="jumbotron" duration={3000} delay={500} distance="30px">
-  					<h1>Michael's Personal Website and Blog</h1>
-  					<p>Hello welcome to my site! Click my face for my <b>resume</b></p>
-  					<a href={ResumeFile} alt='/resume'>
-  						<img
-  							//style={{border: `5px black solid`}}
-  							className='shadow-2 b3 grow' 
-  							src={MikeInOsaka}
-  						 	alt="Michael in Osaka"
-  						 	width="250px"
-  						 />
-  					</a>
+  					<div className="flex items-center">
+  						<div className='w-50 shadow-1'>
+  							<h1>Michael's Portfolio and Blog</h1>
+  							<p>Hello welcome to my site! Click my face for my <b>resume</b></p>
+  						</div>
+  						<div className='w50 center'>
+  							<a href={ResumeFile} alt='/resume'>
+  							<img
+  								//style={{border: `5px black solid`}}
+  								className='shadow-2 b3 grow' 
+  								src={MikeInOsaka}
+  							 	alt="Michael in Osaka"
+  							 	width="250px"
+  							 />
+  							</a>
+  						</div>
+  					</div>
   				</Fade>
   		 	</Textbox>
   		 </section>
