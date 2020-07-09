@@ -17,6 +17,7 @@ const Hero = () => {
   const { title, name, subtitle, cta } = hero;
 
   return (
+    <section id='hero' className='pa3 ma3 center'>
       <Textbox>
         <Fade duration={2000} delay={1000} distance="30px">
           <h1 className="hero-title">
@@ -34,6 +35,7 @@ const Hero = () => {
           </p>
         </Fade>
       </Textbox>
+    </section>
   );
 };
 
