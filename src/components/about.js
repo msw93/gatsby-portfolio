@@ -11,7 +11,7 @@ export default function About() {
   return(
   	<Textbox className=''>
       <div className='flex items-center'>
-      	<Fade className='' duration={8000} delay={500} distance="30px">
+      	<Fade className='' duration={2000} delay={1000} distance="30px">
           <div className='w-50 shadow-1 pa3 fl pr3'>
       	    <Header headerText='I am Michael!' />
             <p>{Blog}<a href={URL}> here!</a></p>

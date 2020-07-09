@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
       <Textbox>
-        <Fade duration={3000} delay={1000} distance="30px">
+        <Fade duration={2000} delay={1000} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name}</span>
@@ -26,7 +26,7 @@ const Hero = () => {
             {subtitle || "I'm the Unknown Developer."}
           </h1>
         </Fade>
-        <Fade duration={3000} delay={2000} distance="30px">
+        <Fade duration={2000} delay={2000} distance="30px">
           <p className="hero-cta">
             <a className="cta-btn cta-btn--hero" href="#contact">
               {cta || 'Know more'}

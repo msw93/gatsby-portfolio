@@ -4,3 +4,10 @@ export const Bio = {
 }
 
 export const Test = 3;
+
+export const Projects = {
+	Name: "Smart Brain",	
+	Description: "Smart Brain, a face recognition app, made with React, Postgres, Node.js, Express",
+	URL: 'https://smart-brain-mwin.herokuapp.com/',
+	CodeBaseURL: "https://github.com/mikewiner/smart-brain",
+}
