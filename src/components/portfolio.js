@@ -1,11 +1,12 @@
 import React from "react";
-import { a } from 'gatsby';
 import Header from "../components/header.js"
 import Textbox from "../components/textbox.js";
+import Tilt from 'react-tilt';
 import Fade from 'react-reveal/Fade';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { projectsArray } from "../data/personalInfo.js";
+import { NiceButton } from './Button/Button'
 
 
 
@@ -61,14 +62,31 @@ export default function Portfolio() {
 
               return (
                 <div key={index} className='cf mt3 pa3 br2 shadow-2'>
-                <h2 className='mb3'>{Name}</h2>
-                <p className="fl br2 pa3 w-30 mr3 shadow-2 tc">
-                  {Description}<br />
-                  <a href={URL}>Click here for demo</a><br />
-                  <a href={CodeBaseURL}>Click here to see code</a>
-                </p>
-                <Img className="fr w-60 br2 shadow-2"fluid={image.node.childImageSharp.fluid} alt={`smart-brain`} /> 
-              </div>
+                  <h2 className='mb3'>{Name}</h2>  
+                  <div className='flex items-center justify-around'>           
+                    <p className="br2 pa3 w-30 mr3 shadow-2 tc">
+                      {Description}<br />
+                      <NiceButton href={URL} target={`__blank`}>Live</NiceButton> {` `}
+                      <NiceButton href={CodeBaseURL} target={`__blank`}>Codebase</NiceButton>
+                    </p>
+                    <Tilt
+                      className="w-50 fr br2 shadow-2"  
+                      options={{
+                        reverse: true,
+                        max: 20,
+                        perspective: 1000,
+                        scale: 1,
+                        speed: 300,
+                        transition: true,
+                        axis: null,
+                        reset: true,
+                        easing: 'cubic-bezier(.03,.98,.52,.99)',}}>
+                      <Img 
+                        fluid={image.node.childImageSharp.fluid}
+                        alt={`smart-brain`} /> 
+                    </Tilt>
+                  </div>
+                </div>
               )
             })}
           	

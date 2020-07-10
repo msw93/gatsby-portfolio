@@ -23,7 +23,7 @@ export const projectsArray = [
 	{
 		ImagePath:'origen-water.jpg',
 		Name: "Origen",	
-		Description: "Landing page done for Kickstarter UV Waterbottle. Made with Gatsby, graphql.",
+		Description: "Landing page done for Kickstarter UV Waterbottle. Made with Gatsby, graphql. With embedded Mailchimp form and mobile friendly!",
 		URL: 'https://origen-water.surge.sh/',
 		CodeBaseURL: "https://github.com/mikewiner/origen-landing",
 	},
@@ -40,6 +40,20 @@ export const projectsArray = [
 		Description: "A Kanji Dictionary made for Japanese learners, created with React.",
 		URL: "https://mikewiner.github.io/KanjiDictionary-v1/",
 		CodeBaseURL: "https://github.com/mikewiner/KanjiDictionary-v1",
+	},	
+	{
+		ImagePath:'background-generator.jpg',
+		Name: "Background Linear Gradient Generator",	
+		Description: "A front end web app made wit Javascript, HTML5 and CSS3",
+		URL: "https://mikewiner.github.io/Background-generator/",
+		CodeBaseURL: "https://github.com/mikewiner/Background-generator",
+	},
+	{
+		ImagePath:'microhalos.jpg',
+		Name: "Cosmology Research Project",	
+		Description: "NSERC scholarship funded reasearch in Dark Matter Microhalos. Data visualization and analysis done with Python.",
+		URL: "",
+		CodeBaseURL: "",
 	},
 
 ]

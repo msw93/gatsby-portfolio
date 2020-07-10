@@ -2,34 +2,54 @@ import React from 'react';
 import Textbox from "../components/textbox"
 import Fade from 'react-reveal/Fade';
 import { Link } from 'gatsby';
-import MikeInOsaka from "../images/Mike-In-Osaka.jpg";
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 
 
-const Intro = () => (
-  <section id='intro' className = "pa3 center">
-    <Textbox>
-  		<Fade className="jumbotron" duration={1000} delay={800} distance="30px">
-  			<div className="flex items-center">
-  				<div className='w-50 shadow-1'>
-  					<h1>Michael's Portfolio and Blog</h1>
-  					<p>Hello welcome to my site! Click my face for my <b>resume</b></p>
-  				</div>
-  				<div className='w50 center'>
-  					<Link to='/resume' alt='/resume'>
-  					<img
-  						//style={{border: `5px black solid`}}
-  						className='shadow-2 b3 grow' 
-  						src={MikeInOsaka}
-  					 	alt="Michael in Osaka"
-  					 	width="250px"
-  					 />
-  					</Link>
-  				</div>
-  			</div>
-  		</Fade>
-   	</Textbox>
-  </section>  
-)
+const Intro = () => {
+  const data = useStaticQuery(graphql`
+    query OsakaPicQuery {
+    file(relativePath: {eq: "Mike-In-Osaka.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+        fixed (width: 300, height: 350) {
+          ...GatsbyImageSharpFixed
+        } 
+      }
+    }
+  }
+  `)
+
+  //console.log(data.file.childImageSharp.fluid);
+  //const MikeInOsaka = data.file.childImageSharp.fluid;
+  const MikeInOsakaFixed = data.file.childImageSharp.fixed;
+
+  return(
+    <section id='intro' className = "pa3 center">
+      <Textbox>
+    		<Fade className="jumbotron" duration={1000} delay={800} distance="30px">
+    			<div className="flex items-center justify-around">
+    				<div className='w-50 pa3 pt0 fl shadow-1 tc'>
+    					<h1>Michael's Winer, Full-Stack Web Developer</h1>
+    					<p>Welcome click my face for my <b>resume</b></p>
+    				</div>
+    				<div className='fr pa3 w-40'>
+    					<Link to='/resume' alt='/resume'>
+    					<Img
+    						className='shadow-2 br2 b3 grow' 
+                fixed={MikeInOsakaFixed}
+    					 	alt={`Michael in Osaka`}
+    					 />
+    					</Link>
+    				</div>
+    			</div>
+    		</Fade>
+     	</Textbox>
+    </section>  
+  )
+}
 
 export default Intro;
