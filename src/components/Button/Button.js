@@ -13,7 +13,7 @@ export function NiceButton({href, target, children}) {
 export function LocalButton({to, children}) {
   return (
     <span>
-      <Link to={`#`+to} class={style.testButton}>
+      <Link to={to} class={style.testButton}>
         {children}
       </Link> 
     </span>

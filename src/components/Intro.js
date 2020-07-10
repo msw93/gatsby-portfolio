@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
+import { LocalButton } from './Button/Button'
 
 
 const Intro = () => {
@@ -34,7 +34,7 @@ const Intro = () => {
     			<div className="flex items-center justify-around">
     				<div className='w-50 pa3 pt0 fl shadow-1 tc'>
     					<h1>Michael's Winer, Full-Stack Web Developer</h1>
-    					<p>Welcome click my face for my <b>resume</b></p>
+    					<p>Welcome, click <LocalButton to="/resume">HERE</LocalButton> or my face for my <b>resume</b></p>
     				</div>
     				<div className='fr pa3 w-40'>
     					<Link to='/resume' alt='/resume'>

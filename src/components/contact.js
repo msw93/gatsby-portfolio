@@ -17,7 +17,7 @@ export default function Contact() {
                 target={`__blank`}>
                   Email me here
               </NiceButton>{` `}
-              <LocalButton to={`about`}>Go back to top</LocalButton>
+              <LocalButton to={`#`}>Go back to top</LocalButton>
 
         	</div>
         </Fade>

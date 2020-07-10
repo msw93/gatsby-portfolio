@@ -37,13 +37,13 @@ export default function About() {
   	 <Textbox className=''>
         <div className='flex items-center justify-around'>
         	<Fade className='' duration={2000} delay={1000} distance="30px">
+            <div className='ma3 mr0 w-40 fl'>
+              <Img fixed={DevProPicFixed} />
+            </div>
             <div className='w-50 shadow-1 pa3 fl pr3'>
         	    <Header headerText='I am Michael!' />
               <p>{Blog}<a href={URL} target='__blank'> here!</a></p>
-        	   </div>  
-            <div className='ma3 mr0 w-40 fl'>
-            <Img fixed={DevProPicFixed} />
-            </div>
+        	  </div>  
         	</Fade>
         </div>
       </Textbox>
