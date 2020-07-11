@@ -26,11 +26,10 @@ export default function About() {
     }
     }
   `)
+    
   //console.log(data.file.childImageSharp.fluid);
   //const DevProPic = data.file.childImageSharp.fluid;
   const DevProPicFixed = data.file.childImageSharp.fixed;
-
-
 
   return(
     <section id='about' className='pa3 ma3 center'>

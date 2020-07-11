@@ -2,8 +2,14 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const Resume = () => (
-	<div className='flex flex-column tc'>
-		<h1>COMING SOON TO A THEATER NEAR YOU</h1>
+	<div className=''>
+
+		<div className="w-100 h3 mb4 mb1-m mb0-l">
+		  <div className="fl w-100 w-two-thirds-m w-two-thirds-l pa2 bg-dwyl-teal ba b--dwyl-dark-teal">.w-two-thirds</div>
+		  <div className="fl w-100 w-third-m w-third-l pa2 bg-dwyl-teal ba b--dwyl-dark-teal">.w-third</div>
+		</div>
+
+
 		<button className='w-20 br3 bg-purple center'>
 			<Link className='white no-underline hover-black' to="/">Go BACK</Link>		
 		</button>

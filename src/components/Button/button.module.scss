@@ -1,6 +1,7 @@
 $color: darken(#b0ecec, 20%);
 
 .testButton {
+    text-decoration: none;
     display: inline-block;
     padding: .40rem 0.9rem;
     border-radius: 3px;
@@ -37,7 +38,7 @@ $color: darken(#b0ecec, 20%);
         z-index: -1;
     }
     &:hover {
-    		text-decoration: none;
+    	text-decoration: none;
         color: #fff;
         &:before {
             width: 100%;

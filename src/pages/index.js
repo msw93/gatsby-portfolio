@@ -18,6 +18,7 @@ const Home = () => (
         <meta charSet="utf-8" />
         <title>Michael Winer</title>
         <link rel="canonical" href="https://mikewiner.github.io/gatsby-portfolio/" />
+        
       </Helmet>
 
   		<Navbar />
