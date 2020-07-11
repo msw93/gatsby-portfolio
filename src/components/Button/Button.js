@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 export function NiceButton({href, target, children}) {
   return (
-    <a href={href} target={target} class={style.testButton}>
+    <a href={href} target={target} className={style.testButton}>
       {children}
     </a>
   );
@@ -13,7 +13,7 @@ export function NiceButton({href, target, children}) {
 export function LocalButton({to, children}) {
   return (
     <span>
-      <Link to={to} class={style.testButton}>
+      <Link to={to} className={style.testButton}>
         {children}
       </Link> 
     </span>

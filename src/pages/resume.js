@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const Resume = () => (
 	<div className=''>
 
-		<div className="w-100 h3 mb4 mb1-m mb0-l">
+		<div className="flex-l flex-m w-100 h3 mb4 mb1-m mb0-l">
 		  <div className="fl w-100 w-two-thirds-m w-two-thirds-l pa2 bg-dwyl-teal ba b--dwyl-dark-teal">.w-two-thirds</div>
 		  <div className="fl w-100 w-third-m w-third-l pa2 bg-dwyl-teal ba b--dwyl-dark-teal">.w-third</div>
 		</div>
