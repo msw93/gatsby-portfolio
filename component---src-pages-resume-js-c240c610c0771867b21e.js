@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{F2CN:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a),l=t("Wbzz");n.default=function(){return c.a.createElement("div",{className:"flex flex-column tc"},c.a.createElement("h1",null,"COMING SOON TO A THEATER NEAR YOU"),c.a.createElement("button",{className:"w-20 br3 bg-purple center"},c.a.createElement(l.Link,{className:"white no-underline hover-black",to:"/"},"Go BACK")))}}}]);
-//# sourceMappingURL=component---src-pages-resume-js-c240c610c0771867b21e.js.map
