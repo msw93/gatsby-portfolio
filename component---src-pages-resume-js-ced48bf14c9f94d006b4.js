@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{F2CN:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),c=t("Wbzz");n.default=function(){return l.a.createElement("div",{className:"flex flex-column"},l.a.createElement("h1",null,"Fooled ya bitch I ain't got no resume."),l.a.createElement("button",{className:"w-20 br3 bg-purple center"},l.a.createElement(c.Link,{className:"white no-underline hover-black",to:"/"},"Go BACK")))}}}]);
+//# sourceMappingURL=component---src-pages-resume-js-ced48bf14c9f94d006b4.js.map
