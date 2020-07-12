@@ -6,7 +6,7 @@ import { NiceButton, LocalButton} from './Button/Button'
 
 export default function Contact() {
   return (
-    <section id='contact' className='pa3 ma3 tc flex justify-center vh-50-l mt5-l vh-50-m mt5-m '>
+    <section id='contact' className='pa3 ma3 tc flex justify-center '>
       <Fade bottom={true} duration={1000} delay={500} distance="30px">
         <Textbox>
         		<div className="bg-white">
