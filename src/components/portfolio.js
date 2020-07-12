@@ -47,17 +47,17 @@ export default function Portfolio() {
   return (
     <section id='portfolio' className='pa1 ma3 flex justify-center'>
       <Textbox id="portfolio" className=''>
-          <Fade duration={2000} delay={1000} distance="30px">
+          <Fade bottom={true} duration={1000} delay={500} distance="30px">
               <h1 className='mt1'>Projects</h1>
             
             {projectsArray.map((project,index) => {
               const {URL, CodeBaseURL, Description, ImagePath, Name} = project;
-              console.log(index);
+              //console.log(index);
               const image = data.allFile.edges.find(n => {
                   return n.node.relativePath.includes(ImagePath);
               });
 
-              console.log(image);
+              //console.log(image);
 
               return (
                 <div key={index} className='mt3 pa3 br2 shadow-2'>
