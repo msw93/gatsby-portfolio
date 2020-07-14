@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade'
 
 export default function Navbar() {
   return (   
-  	 <header className='white f4-l f4-m f5'>
+  	 <nav className='navbar white f4-l f4-m f5'>
       <Fade className='' down={true} duration={1000} delay={300} distance="30px">
   	   	<ul className=''>
   	   	  <li><Link className='br3' to="#">Home</Link></li>
@@ -15,6 +15,6 @@ export default function Navbar() {
 	     		<li className="push"><Link className='br3' to="#contact">Contact</Link></li>
 		   	</ul>
       </Fade>
-  	 </header>
+  	 </nav>
   );
 }

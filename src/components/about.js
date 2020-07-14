@@ -37,7 +37,7 @@ export default function About() {
         <div className='flex-l items-center-l justify-around-l w-100'>
         	<Fade bottom={true} duration={2000} delay={1000} distance="30px">
             <div className='ma3 pr4-l w-30-l w-40-m w-70 center'>
-              <Img className=''fluid={DevProPic} />
+              <Img fluid={DevProPic} />
             </div>
             <div className='w-50-l f4-l f5 w-100 shadow-1 pa3 pr3 mr5'>
         	    <Header headerText='I am Michael!' />
