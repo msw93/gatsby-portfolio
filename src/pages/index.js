@@ -8,7 +8,6 @@ import FooterSelfmade from "../components/FooterSelfmade.js";
 import About from '../components/about.js';
 import Contact from '../components/contact.js';
 import Portfolio from '../components/portfolio.js';
-import Filler from '../components/SectionFiller/SectionFiller';
 import upArrow from '../images/up-arrow-teal-ng.svg'
 //import ResumeFile from '../data/Fake-resume.pdf'
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,25 +24,19 @@ const Home = () => (
       </Helmet>
   		<Navbar />
       <Intro />
-      <Filler fill={`About Me`}/>
-  		<About />
-
-      <Filler fill={`Portfolio`}/>
+      <About />
   		<Portfolio />
-
-      <Filler fill={`Contact`}/>
   		<Contact />
       <FooterSelfmade />
-
-      <div className='flex justify-center tc pb3'>
-        <Link to='/#'>
-          <img className='w-30' src={upArrow} alt='arrow'/>
-        </Link>
-      </div>
-
-
   	</div>
   );
 
 
 export default Home;
+
+
+      // <div id="upArrow" className='flex justify-center tc pb3'>
+      //   <Link to='/#'>
+      //     <img className='w-30' src={upArrow} alt='arrow'/>
+      //   </Link>
+      // </div>

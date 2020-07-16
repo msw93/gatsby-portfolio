@@ -32,21 +32,32 @@ export default function About() {
   //const DevProPicFixed = data.file.childImageSharp.fixed;
 
   return(
-    <section id='about' className='h-100-l h-100-m flex-l items-center-l flex-m items-center-m pa2 ma3 pb5 flex justify-center'>
-  	 <Textbox className='w-90-l w-90-m w-100'>
-        <div className='flex-l items-center-l justify-around-l w-100'>
-        	<Fade bottom={true} duration={2000} delay={1000} distance="30px">
-            <div className='ma3 pr4-l w-30-l w-40-m w-70 center'>
-              <Img fluid={DevProPic} />
-            </div>
-            <div className='w-50-l f4-l f5 w-100 shadow-1 pa3 pr3 mr5'>
-        	    <Header headerText='I am Michael!' />
-              <p>{Blog}<a href={URL} target='__blank'> here!</a></p>
-        	  </div>  
-        	</Fade>
-        </div>
-      </Textbox>
-    </section>
+    <div>
+      
+      <div className='relative flex justify-center'>
+        <div className="separator"></div>
+        <p className="absolute o-10 f-subheadline tc mt4 lh-s">About Me</p>
+      </div>
+
+      <section id='about' className='h-100-l h-100-m flex-l items-center-l flex-m items-center-m pa2 ma3 pb5 flex justify-center'>
+       <Textbox className='w-90-l w-90-m w-100'>
+          <div className='flex-l items-center-l justify-around-l w-100'>
+          	<Fade bottom={true} duration={2000} delay={1000} distance="30px">
+              <div className='ma3 pr4-l w-30-l w-40-m w-70 center'>
+                <Img fluid={DevProPic} />
+              </div>
+              <div className='w-50-l f4-l f5 w-100 shadow-1 pa3 pr3 mr5'>
+          	    <Header headerText='I am Michael!' />
+                <p>{Blog}<a href={URL} target='__blank'> here!</a></p>
+          	  </div>  
+          	</Fade>
+          </div>
+        </Textbox>
+      </section>
+
+      <div className="separatorEnd"></div>
+      
+    </div>
 
   )
 }

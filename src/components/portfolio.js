@@ -45,6 +45,15 @@ export default function Portfolio() {
 	`)
 
   return (
+
+    <div>
+    
+      <div className='flex justify-center'>
+        <p className="o-10 f-subheadline tc m3 pa3 mb1 lh-s">Portfolio</p>
+      </div>
+
+
+
     <section id='portfolio' className='pa1 ma3 flex justify-center'>
       <Textbox id="portfolio" className=''>
           <Fade bottom={true} duration={1000} delay={500} distance="30px">
@@ -94,6 +103,8 @@ export default function Portfolio() {
         </Fade>
       </Textbox>
     </section>
+
+    </div>
   )
 }
 

@@ -1,13 +1,14 @@
 $filler-color: black;
+$diagonal-color: darken(#eefbfb, 50%);
 
 .filler {
   white-space: nowrap;
   overflow: hidden;
   //font-family: "Share Tech Mono", monospace;
   color: $filler-color;
-  font-size: 5.1rem;
+  font-size: 4.8rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .45);
-  opacity: 0.10;
+  opacity: 0.1;
   
   display: flex;
   justify-content: center;
@@ -15,6 +16,7 @@ $filler-color: black;
   
   &::before,
   &::after {
+
     content: '';
     display: block;
     height: 0.09em;
@@ -22,6 +24,7 @@ $filler-color: black;
   }
   
   &::before {
+
     background: linear-gradient(to right, rgba(240,240,240,0), $filler-color);
     margin-right: 4vh;
   }
@@ -30,4 +33,14 @@ $filler-color: black;
     background: linear-gradient(to left, rgba(240,240,240,0), $filler-color);
     margin-left: 4vh;
   } 
+}
+
+
+.blueDiagonal{
+  width: 0;
+  height:0;
+  position:absolute;
+  bottom:0px;
+  border-bottom: 100px solid $diagonal-color;
+  border-left: 100vw solid transparent;
 }

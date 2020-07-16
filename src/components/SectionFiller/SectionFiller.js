@@ -2,12 +2,21 @@ import React from 'react';
 import style from './SectionFiller.module.scss';
 
 
-const Filler = ({fill}) => {
-
+const Filler = ({fill, id}) => {
+	
   return(
-    <div className={style.filler}>
-      <p>{fill}</p>
+  	<div >
+  		
+  		<div className='topHalf'>
+    		<div id={`fill`} className={style.filler}> 
+    				<p className=''>{fill}</p>
+    		</div>
+    	</div>
+
+    	
+
     </div>
+
 
   )
 }
