@@ -9,11 +9,10 @@ export default function Contact() {
 
     <div>
 
-      <div className='pt4 relative flex justify-center'>
+      <div className='fillers pt4 pb0 ma0 relative flex justify-center'>
         <div className="separator sepContact"></div>
-        <p className="absolute o-10 f-subheadline items-center tc mt4 mb1 lh-s">Contact</p>
+        <p className="absolute o-10 f-subheadline items-center tc mt4 mb0 lh-s">Contact</p>
       </div>
-
       <section id='contact' className='pa3 pb5 ma3 tc flex justify-center '>
         <Fade bottom={true} duration={1000} delay={500} distance="30px">
           <Textbox>

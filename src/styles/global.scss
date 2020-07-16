@@ -20,9 +20,9 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "eurostile", sans-serif;
+	//font-family: "eurostile", sans-serif;
 	//font-family: 'Kanit', sans-serif;
-	//font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
   background-color: $body-color;
   font-size: 1.2rem;
 }
@@ -41,6 +41,7 @@ img {
 ul {
 	//box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 ); 
 	background-color: $body-color;
+	font-family: 'Europa', sans-serif;
 	z-index:1; 
 	list-style-type: none;
 	margin: 0;
@@ -144,7 +145,7 @@ a, a:hover, a:active, a:visted, a:focus {
 
 #contact, #upArrow {
 	padding-top: 5rem;
-	margin:0;
+	margin: -1px;
 	background-color: $body-color-dark;
 }
 
@@ -239,16 +240,13 @@ a, a:hover, a:active, a:visted, a:focus {
   
 }
 
-
-
 .separator.reverse {
   transform: rotateY(180deg);
 }
 
-
-.vertical .separator.reverse {
-  transform: rotateX(180deg);
-}
+.fillers {
+	font-family: 'Europa', sans-serif;
+} 
 
 
   /* For mobile phones: */

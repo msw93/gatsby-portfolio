@@ -34,7 +34,7 @@ export default function About() {
   return(
     <div>
       
-      <div className='relative flex justify-center'>
+      <div className='fillers relative flex justify-center'>
         <div className="separator"></div>
         <p className="absolute o-10 f-subheadline tc mt4 lh-s">About Me</p>
       </div>
