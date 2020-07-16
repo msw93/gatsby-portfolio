@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Resume = () => (
 	<div className='flex flex-column'>
-		<h1>Fooled ya bitch I ain't got no resume.</h1>
+		<h1>How did you end up here? Press the purple button!</h1>
 		<button className='w-20 br3 bg-purple center'>
 			<Link className='white no-underline hover-black' to="/">Go BACK</Link>		
 		</button>
