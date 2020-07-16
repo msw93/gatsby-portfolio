@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+
+$body-color: #eefbfb;
+$button-color: #5ed8d8;
+$dark-color: darken(#5ed8d8, 20%);
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   scroll-behavior: smooth;
 
@@ -9,9 +19,10 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Kanit', sans-serif;
-	/*font-family: 'Roboto', sans-serif;;*/
-  background-color: #eefbfb;
+	font-family: "eurostile", sans-serif;
+	//font-family: 'Kanit', sans-serif;
+	//font-family: 'Roboto', sans-serif;
+  background-color: $body-color;
   font-size: 1.2rem;
 }
 
@@ -27,18 +38,16 @@ img {
 }
 
 ul {
-	box-shadow: 0px 0px 1px 0.5px rgba( 0, 0, 0, 0.2 ); 
+	//box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 ); 
 	background-color: #eefbfb;
 	z-index:1; 
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	/*background-color: #0EBFE9;*/
+	//overflow: hidden;
 	position: fixed;
   	top: 0;
   	width: 100%;
-	/*border: 1px solid #e7e7e7;*/
 }
 
 li {
@@ -50,19 +59,38 @@ li {
 
 
 li:last-child {
-  	border-right: none;
+  	//border-right: none;
   	/*border-left:1px solid #bbb;*/
 }
 
 li a {
+	//z-index: 10;
+	position: relative;
+	transition: transform .9s;
 	text-decoration: none;
 	display: block;
 	padding: 8px;
 	color: black;
+	
 }
 
 li a:hover{
-	background-color: #B0E0E6;
+	border-radius: 3px;
+	background-color: #5ed8d8;
+	color: white;
+
+	box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); 
+	transform: translate(2px, 6px);
+
+}
+
+li:last-child a:hover {
+	transform: translate(0px, 6px);  
+}
+
+.push{
+	display: inline-flex;
+	float: right;
 }
 
 
@@ -72,16 +100,36 @@ footer {
   	bottom: 0;
 }
 
-
-.push{
-	display: inline-flex;
-	float: right;
+footer svg{
+	transition: transform .9s;
 }
+	
+footer svg:hover {
+	transform: translate(0px, -5px);
+	//color: $button-color;
+}
+
+
+html:not([data-scroll='0']) {
+    	
+  		ul {
+				background-color: darken($body-color, 3%);
+  			transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0 0 .2em rgba(0, 0, 0, .5);
+    	}
+    
+    	li a:hover {
+
+				transform: none;
+			}
+}
+
+
+
 
 a, a:hover, a:active, a:visted, a:focus {
   text-decoration: none;
 }
-
 
   /* For mobile phones: */
 @media (max-width: 420px) {

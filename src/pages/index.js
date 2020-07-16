@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "../components/navbar.js";
 import Intro from "../components/Intro.js";
@@ -7,6 +8,8 @@ import FooterSelfmade from "../components/FooterSelfmade.js";
 import About from '../components/about.js';
 import Contact from '../components/contact.js';
 import Portfolio from '../components/portfolio.js';
+import Filler from '../components/SectionFiller/SectionFiller';
+import upArrow from '../images/up-arrow-teal-ng.svg'
 //import ResumeFile from '../data/Fake-resume.pdf'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../styles/global.scss';
@@ -20,13 +23,25 @@ const Home = () => (
         <title>Michael Winer</title>
         <link rel="canonical" href="https://mikewiner.github.io/gatsby-portfolio/" />
       </Helmet>
-
   		<Navbar />
       <Intro />
+      <Filler fill={`About Me`}/>
   		<About />
+
+      <Filler fill={`Portfolio`}/>
   		<Portfolio />
+
+      <Filler fill={`Contact`}/>
   		<Contact />
-      <FooterSelfmade /> 
+      <FooterSelfmade />
+
+      <div className='flex justify-center tc pb3'>
+        <Link to='/#'>
+          <img className='w-30' src={upArrow} alt='arrow'/>
+        </Link>
+      </div>
+
+
   	</div>
   );
 

@@ -15,7 +15,7 @@ const Intro = () => {
 
     			<Fade left={true} duration={1000} delay={800} distance="50px">
             <div className='w-50-l w-100 bg-white pa3 pt0 shadow-1'>
-    			 	  <h1 className='pt3'>Michael Winer, Front End Web Developer, Super Hero and more.</h1>
+    			 	  <h1 className='pt3'>Michael Winer, Front-End Web Developer, Adventurer and more.</h1>
     			    <p className='lh-copy'>Welcome, click <LocalButton className="pb2" to="/resume">HERE</LocalButton> or my face for my <b>resume</b></p>
     			  </div>
           </Fade>

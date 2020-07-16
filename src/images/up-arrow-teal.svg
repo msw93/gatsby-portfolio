@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="196px" height="209px" viewBox="0 0 196 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>multimedia</title>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" gradientTransform="translate(0.500000,0.000000),scale(0.937500,1.000000),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.01" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </radialGradient>
+        <path d="M104,0 C46.6544,0 0,43.7385 0,97.5 C0,151.2615 46.6544,195 104,195 C161.3456,195 208,151.2615 208,97.5 C208,43.7385 161.3456,0 104,0 Z M158.86125,101.216782 L76.36125,168.716998 C75.7275,169.234499 74.98875,169.5 74.25,169.5 C73.65,169.5 73.04625,169.328999 72.49875,168.977998 C71.26875,168.199496 70.5,166.669491 70.5,164.999986 L70.5,29.9995555 C70.5,28.3300502 71.26875,26.8000453 72.49875,26.0215428 C73.72875,25.2385403 75.21375,25.3465407 76.365,26.2825437 L158.865,93.7827587 C159.885,94.6197614 160.5,96.0102658 160.5,97.4997706 C160.5,98.9892753 159.885,100.37978 158.86125,101.216782 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="multimedia" transform="translate(98.000000, 104.500000) rotate(-90.000000) translate(-98.000000, -104.500000) translate(-6.000000, 7.000000)" fill-rule="nonzero">
+            <g id="Shape">
+                <use fill="#5ED8D8" xlink:href="#path-2"></use>
+                <use fill-opacity="0.5" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

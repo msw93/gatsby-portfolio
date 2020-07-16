@@ -1,0 +1,33 @@
+$filler-color: black;
+
+.filler {
+  white-space: nowrap;
+  overflow: hidden;
+  //font-family: "Share Tech Mono", monospace;
+  color: $filler-color;
+  font-size: 5.1rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .45);
+  opacity: 0.10;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;
+  }
+  
+  &::before {
+    background: linear-gradient(to right, rgba(240,240,240,0), $filler-color);
+    margin-right: 4vh;
+  }
+  
+  &::after {
+    background: linear-gradient(to left, rgba(240,240,240,0), $filler-color);
+    margin-left: 4vh;
+  } 
+}
