@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url("https://use.typekit.net/ojv4ekx.css");
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
 
 $body-color: #eefbfb;
 $body-color-dark: darken($body-color, 7%);
@@ -15,6 +17,8 @@ $dark-color: darken($button-color, 20%);
 
 html {
   scroll-behavior: smooth;
+  margin-right: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,9 +26,11 @@ body {
 	margin: 0;
 	//font-family: "eurostile", sans-serif;
 	//font-family: 'Kanit', sans-serif;
+  //font-family: "Quicksand", sans-serif;
 	font-family: 'Roboto', sans-serif;
   background-color: $body-color;
   font-size: 1.2rem;
+
 }
 
 
@@ -41,7 +47,9 @@ img {
 ul {
 	//box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 ); 
 	background-color: $body-color;
-	font-family: 'Europa', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+	//font-family: 'Europa', sans-serif;
 	z-index:1; 
 	list-style-type: none;
 	margin: 0;
@@ -145,7 +153,8 @@ a, a:hover, a:active, a:visted, a:focus {
 
 #contact, #upArrow {
 	padding-top: 5rem;
-	margin: -1px;
+	margin: 0px;
+  margin-top: -1px;
 	background-color: $body-color-dark;
 }
 
@@ -217,10 +226,10 @@ a, a:hover, a:active, a:visted, a:focus {
 }
 
 .sepContact::after {
-
+  //margin: 0;
   //background-color: clear;
-  clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  
+  //clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
 }
 
 .colorSwap::before {
@@ -250,17 +259,29 @@ a, a:hover, a:active, a:visted, a:focus {
 	font-family: 'Europa', sans-serif;
 } 
 
+.extLink {
+  color: $dark-color;
+  padding: 2px;
+  margin: 2px;
+}
+
+.extLink:hover {
+  color: white;
+  background-color: $button-color;
+  border-radius: 3px;
+
+}
 
   /* For mobile phones: */
 @media (max-width: 481px) {
 
 
-	footer, .blueDiagonal {
-    display: none;
+	footer {
+    //display: none;
   }
 
 	.push{
-		float: none;
+		//float: none;
 	}
 }
 

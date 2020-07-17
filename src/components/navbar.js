@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade'
 //import 'tachyons'
+//import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 
 
 export default function Navbar() {
@@ -48,7 +49,8 @@ if (typeof document !== `undefined`) {
 storeScroll();
 
   return (   
-  	 <nav id='navbar' className='f3-l f4-m f5'>
+
+  	 <nav id='navbar' className='f3-l f4-m f5 fw5'>
       <Fade className='' down={true} duration={1000} delay={300} distance="30px">
   	   	<ul className=''>
   	   	  <li><Link to="#">Home</Link></li>
@@ -57,6 +59,7 @@ storeScroll();
 	     		<li className="push"><Link  to="#contact">Contact</Link></li>
 		   	</ul>
       </Fade>
+
   	 </nav>
   );
 }

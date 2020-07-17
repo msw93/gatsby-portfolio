@@ -13,12 +13,13 @@ export default function Contact() {
         <div className="separator sepContact"></div>
         <p className="absolute o-10 f-subheadline items-center tc mt4 mb0 lh-s">Contact</p>
       </div>
+      
       <section id='contact' className='pa3 pb5 ma3 tc flex justify-center'>
         <Fade bottom={true} duration={1000} delay={500} distance="30px">
           <Textbox>
           		<div className="bg-white">
           			<Header headerText="Let's talk!" />
-          			<p>Contact me through email, click below!</p>
+          			<p>Contact me through email, click below!<br/>Or click one of the buttons in the corner!</p>
                 <NiceButton 
                   href={`mailto:winer.mike@gmail.com`} 
                   target={`__blank`}>
