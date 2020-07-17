@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade'
-//import 'tachyons'
-//import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 
 
 const useIsMobile = () => {
@@ -31,26 +29,7 @@ const useIsMobile = () => {
 
 export default function Navbar() {
   
-  // $('.navTrigger').click(function () {
-  //   $(this).toggleClass('active');
-  //   console.log("Clicked menu");
-  //   $("#mainListDiv").toggleClass("show_list");
-  //   $("#mainListDiv").fadeIn();
-
-  // });
-
-
-  //const [width, setWidth] = useState(window.innerWidth);
-  //const [isMobile, setMobile] = useState(false);
-  const [toggle, setToggle] = useState(false);
-
-
-  // useEffect(() => {
-  //   window.addEventListener("click", () => {
-  //     console.log('click')
-  //   })
-
-  // }, []);
+  
 
   //Javascript Scrolling found from https://css-tricks.com/styling-based-on-scroll-position/ Thank you :)!
   // The debounce function receives our function as a parameter
@@ -92,25 +71,60 @@ export default function Navbar() {
 // Update scroll position for first time
   storeScroll();
 
-  const isMobile = useIsMobile();
 
+
+  // $('.navTrigger').click(function () {
+  //   $(this).toggleClass('active');
+ //   $("#mainListDiv").toggleClass("show_list");
+  //   $("#mainListDiv").fadeIn();
+
+  // });
+
+
+
+
+  const isMobile = useIsMobile();
+  const [toggle, setToggle] = useState(false);
   const handleClick = () => {
-    console.log('FUCK YOU')
+    setToggle(!toggle);
+    console.log('toggle is ', toggle)
   }
 
   if (isMobile)
+    
     return (
-      <nav id='mobNav' className='mobNav f3-l f4-m f5 fw5'>
+      <nav id='mobNav' className='mobNav nav f3-l f4-m f5 fw5'>
         <div>
-          <p>LOGO</p>
-          <ul onClick={handleClick} className=''>
-            <li className=""><Link to="#">F</Link></li>
-            <li><Link to="#about">B</Link></li>
-            <li><Link to="#portfolio">G</Link></li>
-            <li><Link  to="#contact">M</Link></li>
-          </ul>
+        {toggle === false ?
+          <div id="mainListDiv" className="">
+            <ul className='navLinks'>
+              <li className=""><Link onClick={handleClick} to="#">Mike</Link></li>
+              <a href onClick={handleClick} className='navTrigger'>
+                <i></i>
+                <i></i>
+                <i></i>
+              </a>
+            </ul>
+          </div>
+          :
+
+          <div id="mainListDiv show_list" className="main_list">
+            <ul className='navLinks'>
+              <li className=""><Link onClick={handleClick} to="#">Home</Link></li>
+              <li><Link onClick={handleClick} to="#about">About</Link></li>
+              <li><Link onClick={handleClick}to="#portfolio">Portfolio</Link></li>
+              <li><Link onClick={handleClick} to="#contact">Contact</Link></li>
+              <a href className='navTrigger active' onClick={handleClick} >
+                <i></i>
+                <i></i>
+                <i></i>
+              </a>
+            </ul>
+          </div>
+        }
         </div>
       </nav>
+  
     )
 
     return (   
@@ -128,25 +142,31 @@ export default function Navbar() {
     )
   
 }
+    
+    // OLD NAV BAR IT WORKS YA DUMMY
 
 
-  // <nav class="nav">
-  //       <div class="container">
-  //           <div class="logo">
-  //               <a href="#">Your Logo</a>
-  //           </div>
-  //           <div id="mainListDiv" class="main_list">
-  //               <ul class="navlinks">
-  //                   <li><a href="#">About</a></li>
-  //                   <li><a href="#">Portfolio</a></li>
-  //                   <li><a href="#">Services</a></li>
-  //                   <li><a href="#">Contact</a></li>
-  //               </ul>
-  //           </div>
-  //           <span class="navTrigger">
-  //               <i></i>
-  //               <i></i>
-  //               <i></i>
-  //           </span>
-  //       </div>
-  //   </nav>
+    //   <nav class="nav">
+    //     <div class="container">
+    //         <div class="logo">
+    //             <a href="#">Your Logo</a>
+    //         </div>
+    //         <div id="mainListDiv" class="main_list">
+    //             <ul class="navlinks">
+    //                 <li><a href="#">About</a></li>
+    //                 <li><a href="#">Portfolio</a></li>
+    //                 <li><a href="#">Services</a></li>
+    //                 <li><a href="#">Contact</a></li>
+    //             </ul>
+    //         </div>
+    //         <span class="navTrigger">
+    //             <i></i>
+    //             <i></i>
+    //             <i></i>
+    //         </span>
+    //     </div>
+    // </nav>
+
+
+
+
