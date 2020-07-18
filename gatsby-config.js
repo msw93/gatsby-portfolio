@@ -8,6 +8,14 @@
 
 
 module.exports = {
+  siteMetadata: {
+    title: `Michael Winer - Web Developer`,
+    description: "Full-Stack Web Developer from Toronto, Canada",
+    author: "Michael Winer",
+    keywords: [ "Web Developer", 'full Stack', 'front-end', 'back-end', 'javascript', 'html', 'css', 'python', 'react', 'gatsby'],
+    siteUrl: "https://mikewiner.github.io/gatsby-portfolio/"
+  },
+  
   pathPrefix: "/gatsby-portfolio/",
   plugins: [
     {

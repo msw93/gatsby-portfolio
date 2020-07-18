@@ -7,12 +7,13 @@ import About from '../components/About.js';
 import Contact from '../components/Contact.js';
 import Portfolio from '../components/Portfolio.js';
 
-const Home = () => ( 
-  	<div>
-    
+const Home = ({data}) => ( 
+  	 
+
+    <div>    
       <Helmet>
-        <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no, viewport-fit=cover" />
-        <title>Michael Winer</title>
+        <meta lang="en" charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no, viewport-fit=cover" />
+        <title>{data.site.siteMetadata.title}</title>
         <link rel="canonical" href="https://mikewiner.github.io/gatsby-portfolio/" />
       </Helmet>
 
@@ -25,7 +26,16 @@ const Home = () => (
       <FooterSelfmade />
 
   	</div>
-  );
+);
 
+export const query = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
 
 export default Home;

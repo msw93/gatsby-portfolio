@@ -13,12 +13,11 @@ export default function About() {
     query Query {
     file(relativePath: {eq: "DevProPic1.jpg"}) {
       childImageSharp {
-        fluid (maxWidth: 150, quality: 100) {
+        fluid (maxWidth: 400, quality: 100) {
           ...GatsbyImageSharpFluid
         }
         fixed(
-          width: 350
-          duotone: { highlight: "#ffffff", shadow: "#222222"}
+          width: 280
         ) {
           ...GatsbyImageSharpFixed
         }
@@ -55,10 +54,10 @@ export default function About() {
           <div className='flex-l items-center-l justify-around-l w-100'>
           	<Fade bottom={true} duration={1000} delay={500} distance="30px">
               <div className='ma3 pr4-l w-30-l w-40-m w-70 center'>
-                <Img fluid={DevProPic} />
+                <Img className="" fluid= {DevProPic} />
               </div>
             </Fade>
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="30px">
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="60px">
               <div className='w-50-l f4-l f5 w-100 shadow-1 pa3 pr3 mr5'>
           	    <Header headerText='I am Michael!' />
                 <p>{Blog}<a className='extLink no-underline' href={URL} target='__blank'> here!</a></p>
