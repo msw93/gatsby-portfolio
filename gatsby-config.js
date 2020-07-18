@@ -15,8 +15,8 @@ module.exports = {
     keywords: [ "Web Developer", 'full Stack', 'front-end', 'back-end', 'javascript', 'html', 'css', 'python', 'react', 'gatsby'],
     siteUrl: "https://mikewiner.github.io/gatsby-portfolio/"
   },
-  
-  pathPrefix: "/gatsby-portfolio/",
+
+  pathPrefix: "",
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,

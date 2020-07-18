@@ -32,7 +32,7 @@ export const projectsArray = [
 		ImagePath:'portfolio-gatsby.jpg',
 		Name: "Gatsby Portfolio",	
 		Description: "My porfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with Graphql. ",
-		URL: 'https://mikewiner.github.io/gatsby-portfolio/',
+		URL: 'https://mikewiner.ca',
 		CodeBaseURL: "https://github.com/mikewiner/gatsby-portfolio",
 	},
 	{
