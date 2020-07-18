@@ -75,4 +75,3 @@ export default function About() {
 
   )
 }
-//<img className='shadow-2 tc' src={ProfilePic} alt="Profile" width='300px'/>

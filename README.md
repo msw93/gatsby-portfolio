@@ -1,13 +1,13 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Gatsby" src="./src/data/mike-avatar-v2.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
   Personal Portfolio made with Gatsby!
 </h1>
 <p>
-	Done with gatsby, graphql, styling done Tachyons.
+	My porfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with Graphql.
 </p>
 

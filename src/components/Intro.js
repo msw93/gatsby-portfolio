@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import Textbox from "../components/textbox"
 import Fade from 'react-reveal/Fade';
 import { NiceButton } from './Button/Button'
-import avatarSVG from '../images/mike-avatar-v2.svg'
+import avatarSVG from '../data/mike-avatar-v2.svg'
 import resumePDF from '../data/mwiner-resume.pdf'
 
 const Intro = () => {

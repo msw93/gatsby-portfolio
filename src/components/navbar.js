@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade'
 
 
+//React hook I wrote for seting state to mobile! Good job Michael pat on the back.
+
 const useIsMobile = () => {
   const [isMobile, setMobile] = useState(false);
   
@@ -78,6 +80,9 @@ export default function Navbar() {
     //console.log('toggle is ', toggle)
   }
 
+// Instead of using media queries, tried using react hooks to make a repsonsive Navbar that
+// rerenders, not a great idea, but it works!
+
   if (isMobile) 
     return (
       <nav id='mobNav' className='nav f5 '>
@@ -130,27 +135,6 @@ export default function Navbar() {
   
 }
 
-
-    //   <nav class="nav">
-    //     <div class="container">
-    //         <div class="logo">
-    //             <a href="#">Your Logo</a>
-    //         </div>
-    //         <div id="mainListDiv" class="main_list">
-    //             <ul class="navlinks">
-    //                 <li><a href="#">About</a></li>
-    //                 <li><a href="#">Portfolio</a></li>
-    //                 <li><a href="#">Services</a></li>
-    //                 <li><a href="#">Contact</a></li>
-    //             </ul>
-    //         </div>
-    //         <span class="navTrigger">
-    //             <i></i>
-    //             <i></i>
-    //             <i></i>
-    //         </span>
-    //     </div>
-    // </nav>
 
 
 
