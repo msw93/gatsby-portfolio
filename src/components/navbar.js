@@ -71,35 +71,22 @@ export default function Navbar() {
 // Update scroll position for first time
   storeScroll();
 
-
-
-  // $('.navTrigger').click(function () {
-  //   $(this).toggleClass('active');
- //   $("#mainListDiv").toggleClass("show_list");
-  //   $("#mainListDiv").fadeIn();
-
-  // });
-
-
-
-
   const isMobile = useIsMobile();
   const [toggle, setToggle] = useState(false);
   const handleClick = () => {
     setToggle(!toggle);
-    console.log('toggle is ', toggle)
+    //console.log('toggle is ', toggle)
   }
 
-  if (isMobile)
-    
+  if (isMobile) 
     return (
-      <nav id='mobNav' className='mobNav nav f3-l f4-m f5 fw5'>
-        <div>
+      <nav id='mobNav' className='nav f5 '>
+        <div className='container'>
         {toggle === false ?
           <div id="mainListDiv" className="">
             <ul className='navLinks'>
               <li className=""><Link onClick={handleClick} to="#">Mike</Link></li>
-              <a href onClick={handleClick} className='navTrigger'>
+              <a href='#0' onClick={handleClick} onKeyDown={handleClick} className='navTrigger'>
                 <i></i>
                 <i></i>
                 <i></i>
@@ -114,7 +101,7 @@ export default function Navbar() {
               <li><Link onClick={handleClick} to="#about">About</Link></li>
               <li><Link onClick={handleClick}to="#portfolio">Portfolio</Link></li>
               <li><Link onClick={handleClick} to="#contact">Contact</Link></li>
-              <a href className='navTrigger active' onClick={handleClick} >
+              <a href="#0" className='navTrigger active' onClick={handleClick} onKeyDown={handleClick} >
                 <i></i>
                 <i></i>
                 <i></i>
@@ -142,8 +129,6 @@ export default function Navbar() {
     )
   
 }
-    
-    // OLD NAV BAR IT WORKS YA DUMMY
 
 
     //   <nav class="nav">
