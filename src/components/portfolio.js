@@ -117,7 +117,7 @@ export default function Portfolio() {
                 })}
               	
             </Fade>
-            <p className="shadow-2 tc pa3 mb0">Press the little cat in the buttom right corner to see more of my code on <a className="extLink no-underline" href="https://github.com/mikewiner/" target="__blank">Github!</a></p>
+            <p className="shadow-2 tc pa3 mb0">Press the little cat in the bottom right corner to see more of my code on <a className="extLink no-underline" href="https://github.com/mikewiner/" target="__blank">Github!</a></p>
           </Textbox>
       </section>
 
