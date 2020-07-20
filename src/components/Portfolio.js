@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Textbox from "../components/textbox.js";
+import Textbox from "./Textbox.js";
 import Tilt from 'react-tilt';
 import Fade from 'react-reveal/Fade';
 import Img from 'gatsby-image';

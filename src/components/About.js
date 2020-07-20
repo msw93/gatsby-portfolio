@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from "react"
-import Header from "../components/header.js"
-import Textbox from "../components/textbox.js"
+import Header from "./Header.js"
+import Textbox from "./Textbox.js"
 import Fade from 'react-reveal/Fade';
 import { Bio } from "../data/personalInfo.js";
 import { useStaticQuery, graphql } from 'gatsby';
