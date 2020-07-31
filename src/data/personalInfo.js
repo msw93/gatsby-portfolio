@@ -1,5 +1,5 @@
 export const Bio = {
-	Blog:"Hi my name is Michael, I am a developer, snowboarder, lover of japanese and japan. I’ve graduated from University of Guelph with a degree in Theoretical Physics and since then I have spent my time traveling, learning and exploring! I’ve lived in a lot of different places, like Toronto, Whistler, Fernie, Hokkaido, Okinawa, London and more! I’ve also tried my hand at many different jobs like Astrophysics Researcher, Tennis Instructor, English Teacher, Snowboard Instructor, Hostel Staff and more! If you would like to know more about my life’s adventures check out my Travel Blog ",
+	Blog:"Hi my name is Michael, I am a developer, digital design enthusiast, snowboarder, lover of japanese and japan. I’ve graduated from University of Guelph with a degree in Theoretical Physics and since then I have spent my time traveling, learning and exploring! I’ve lived in a lot of different places, like Toronto, Whistler, Fernie, Hokkaido, Okinawa, London and more! I’ve also tried my hand at many different jobs like Astrophysics Researcher, Tennis Instructor, English Teacher, Snowboard Instructor, Hostel Staff and more! If you would like to know more about my life’s adventures check out my Travel Blog ",
 	URL:'https://mikebackpacker.wordpress.com'
 }
 
@@ -15,6 +15,13 @@ export const projects = {
 
 export const projectsArray = [
 	{
+		ImagePath:'optometry-website.jpg',
+		Name: "Optometry Business Website",	
+		Description: "Fully responsive buisness website for local Optometrist. Made with Gatsby, React, and data querying with GraphQL. Customizable blogs and content implemented with headless content managment system - Netlify CMS. Fully custom logo and icon design!",
+		URL: 'https://drwiner.netlify.app',
+		CodeBaseURL: "https://github.com/mikewiner/",
+	},
+	{
 		ImagePath:'smart-brain.jpg',
 		Name: "Smart Brain",	
 		Description: "Smart Brain, a face recognition full-stack web-app, made with React, Postgres, Node.js and Express.",
@@ -24,7 +31,7 @@ export const projectsArray = [
 	{
 		ImagePath:'origen-water.jpg',
 		Name: "Origen",	
-		Description: "Landing page done for Kickstarter UV Waterbottle. Made with Gatsby, graphql. With embedded Mailchimp form, fully responsive and mobile friendly!",
+		Description: "Landing page done for Kickstarter UV Waterbottle. Made with Gatsby, React and GraphQL. With embedded Mailchimp form, fully responsive and mobile friendly!",
 		URL: 'https://origencares.surge.sh/',
 		CodeBaseURL: "https://github.com/mikewiner/origen-landing",
 	},

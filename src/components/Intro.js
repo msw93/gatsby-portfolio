@@ -23,13 +23,13 @@ const Intro = () => {
 
   return(
 
-    <section id='intro' className = "pa3 tc flex justify-center pb0">
+    <section id='intro' className = "mt0-l mt4-m mt5-ns mt4 pa3 tc flex justify-center pb0">
     	
     		<div className=" vh-100-l flex-l justify-center-l items-center-l vh-100-m flex-m justify-center-m items-center-m w-100">
 
     			<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px">
             <div className='w-50-l w-100 bg-white pa3 pt0 shadow-1'>
-    			 	  <h1 className='pt3'>Michael Winer, Front-End Web Developer, Adventurer and more.</h1>
+    			 	  <h1 className='pt3'>Mike Winer, Front-End Web Developer, Digital Designer, Adventurer and more.</h1>
     			    <p className='lh-copy'>Hello! Click <NiceButton className="pb2" href={resumePDF}>HERE</NiceButton> or my face for my <b>resume</b></p>
     			  </div>
           </Fade>

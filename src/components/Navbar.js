@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade'
+import Logo from '../data/mw-logo2.svg'
 
 
 //React hook I wrote for seting state to mobile! Good job Michael pat on the back.
@@ -85,12 +86,12 @@ export default function Navbar() {
 
   if (isMobile) 
     return (
-      <nav id='mobNav' className='nav f5 '>
+      <nav id='mobNav' className='nav f5 mb5'>
         <div className='container'>
         {toggle === false ?
           <div id="mainListDiv" className="">
             <ul className='navLinks'>
-              <li className=""><Link onClick={handleClick} to="#">Mike</Link></li>
+              <li className=""><Link to='#'><img width='60px' src={Logo} alt='logo'/></Link></li>
               <a href='#0' onClick={handleClick} onKeyDown={handleClick} className='navTrigger'>
                 <i></i>
                 <i></i>
@@ -120,13 +121,17 @@ export default function Navbar() {
     )
 
     return (   
-  	 <nav id='navbar' className='f3-l f4-m f5 fw5'>
+  	 <nav id='navbar' className='f3-l f4-m f5 fw7'>
       <Fade className='' down={true} duration={1000} delay={300} distance="30px">
-  	   	<ul className=''>
-  	   	  <li><Link to="#">Home</Link></li>
-	     		<li><Link to="#about">About Me</Link></li>
-	     		<li><Link to="#portfolio">Portfolio</Link></li>
-	     		<li className="push"><Link  to="#contact">Contact</Link></li>
+  	   	<ul className='db flex-l justify-around-l flex-m justify-around-m items-center'>
+          <div className='logo-spot'><Link to='#'><img width='60px' src={Logo} alt='logo'/></Link></div>
+
+          <div className='nav-links'>
+            <li><Link to="#">Home</Link></li>
+            <li><Link to="#about">About Me</Link></li>
+            <li><Link to="#portfolio">Portfolio</Link></li>
+            <li className="push"><Link  to="#contact">Contact</Link></li>
+          </div>
 		   	</ul>
       </Fade>
 
