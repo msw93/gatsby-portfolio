@@ -14,7 +14,7 @@ const Home = ({data}) => (
       <Helmet>
         <meta lang="en" charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no, viewport-fit=cover" />
         <title>{data.site.siteMetadata.title}</title>
-        <link rel="canonical" href="https://mikewiner.github.io/gatsby-portfolio/" />
+        <link rel="canonical" href="https://mikewiner.ca" />
       </Helmet>
 
       
