@@ -62,7 +62,7 @@ export default function Portfolio() {
     <div>
     
         <div className='fillers flex justify-center'>
-          <p className="o-10 f-subheadline tc m3 pa3 mb1 lh-s">Portfolio</p>
+          <p className="o-10 f-subheadline tc m3 pa3 mb1 lh-s unselect">Portfolio</p>
         </div>
   
         <section id='portfolio' className='pa1 ma3 flex justify-center items-center'>

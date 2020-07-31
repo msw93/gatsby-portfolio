@@ -11,7 +11,7 @@ export default function Contact() {
 
       <div className='fillers pt4 pb0 ma0 relative flex justify-center'>
         <div className="separator sepContact"></div>
-        <p className="absolute o-10 f-subheadline items-center tc mt4 mb0 lh-s">Contact</p>
+        <p className="absolute o-10 f-subheadline items-center tc mt4 mb0 lh-s unselect">Contact</p>
       </div>
       
       <section id='contact' className='pa3 pb5 ma3 tc flex justify-center'>
@@ -21,7 +21,7 @@ export default function Contact() {
           			<Header headerText="Let's talk!" />
           			<p>Contact me through email, click below!<br/>Or click one of the buttons in the corner!</p>
                 <NiceButton 
-                  href={`mailto:winer.mike@gmail.com`} 
+                  href={`mailto:mikewinerdev@gmail.com`} 
                   target={`__blank`}>
                     Email me here
                 </NiceButton>{` `}
