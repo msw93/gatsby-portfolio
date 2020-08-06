@@ -18,13 +18,6 @@ module.exports = {
 
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-173911793-2",
-        head: false,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "GatsbyJS",
@@ -53,6 +46,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-173911793-2",
+        head: true,
+        anonymize: true,
+      },
+    },
   ]
 
 }
