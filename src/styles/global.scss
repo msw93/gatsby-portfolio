@@ -333,4 +333,11 @@ a, a:hover, a:active, a:visted, a:focus {
 }
 
 
-
+@media (min-width: 1500px) {
+  .w-20-xl { 
+    width: 20% !important; 
+  }
+  .w-10-xl { width: 10%; }
+  .w-30-xl { width: 30%; }
+  .w-40-xl { width: 40%; }
+}

@@ -35,7 +35,7 @@ const Intro = () => {
           </Fade>
 
           <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px">
-    			  <div className='w-30-l w-40-m w-100 pa3'>
+    			  <div className='w-20-xl w-30-l w-40-m w-100 pa3'>
     			   	<a href={resumePDF} alt='/404'>
                   <img className='grow' src={avatarSVG} alt="My face avatar" width=''/>
     			   	</a>
