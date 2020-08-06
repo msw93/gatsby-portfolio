@@ -19,6 +19,15 @@ module.exports = {
   pathPrefix: "",
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-173911793-2",
+        // this option places the tracking script into the head of the DOM
+        head: true,
+        // other options
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "GatsbyJS",
