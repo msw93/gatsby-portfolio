@@ -83,18 +83,21 @@ export default function Portfolio() {
                     <div key={index} className='mt3 pa3 br2 shadow-2'>
                       <h2 className=' mt0 mb3'>{Name}</h2>
 
-                      <div className='flex-l items-center-l justify-around-l flex-m items-center-m justify-around-m w-100 h-auto-l'>           
+                      <div className='flex-l justify-around-l flex-m justify-around-m items-stretch w-100 h-auto-l'>           
                         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="30px">
-                          <p className="br2 pa3 mr3 shadow-2 tc w-30-l w-50-m w-100">
+                        <div className='flex justify-center items-center w-30-l w-50-m w-100 pl0-l pl0-m pa3-l pa3-m pa0 mr3'>
+                          <p className="shadow-2 br2 pa3-l pa2 pb3 f4-l f5 mb0-l mb0-m mb3 mt0 ">
                             {Description}<br />
                             <NiceButton href={URL} target={`__blank`}>Live</NiceButton> {` `}
                             <NiceButton href={CodeBaseURL} target={`__blank`}>Codebase</NiceButton>
                           </p>
+                        </div>
                         </Fade>
                         <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-                          <div className='br2 w-50-l w-50-m w-100'>
+              
+                          <div className='br2 w-50-l w-50-m w-100 flex justify-center items-center'>
                             <Tilt
-                              className="shadow-2"  
+                              className="shadow-2 w-100"  
                               options={{
                                 reverse: true,
                                 max: 20,
@@ -110,6 +113,7 @@ export default function Portfolio() {
                                 alt={`smart-brain`} /> 
                             </Tilt>
                           </div>
+                          
                         </Fade>
                       </div>
                     </div>

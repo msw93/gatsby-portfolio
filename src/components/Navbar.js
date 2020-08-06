@@ -86,7 +86,7 @@ export default function Navbar() {
 
   if (isMobile) 
     return (
-      <nav id='mobNav' className='nav f5 mb5'>
+      <nav id='mobNav' className='nav f5'>
         <div className='container'>
         {toggle === false ?
           <div id="mainListDiv" className="">

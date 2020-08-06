@@ -70,10 +70,10 @@ li {
 }
 
 
-li:last-child {
-  	//border-right: none;
-  	/*border-left:1px solid #bbb;*/
-}
+// li:last-child {
+//   	//border-right: none;
+//   	/*border-left:1px solid #bbb;*/
+// }
 
 li a {
 	//z-index: 10;
@@ -87,21 +87,28 @@ li a {
   border: 3px solid transparent;
 }
 
+li:last-child a {
+  margin-right: 0;
+}
+
 .logo-spot {
+  padding: 3px;
   border: 3px solid transparent;
+  transition: transform .9s;
   //padding: 8px;
   img{
-    padding: 8px;
+    padding: 3px;
+    padding-top: 6px;
     //transition: transform .4s;
   }
-  img:hover {
-   // border-radius: 3px;
-    //background-color: $button-color;
+  // img:hover {
+  //  // border-radius: 3px;
+  //   //background-color: $button-color;
     
-    //filter: invert(98%) sepia(1%) saturate(494%) hue-rotate(232deg) brightness(118%) contrast(100%);  
+  //   //filter: invert(98%) sepia(1%) saturate(494%) hue-rotate(232deg) brightness(118%) contrast(100%);  
      
-    //transform: scale(1.08);
-  }
+  //   //transform: scale(1.08);
+  // }
 }
 
 .logo-spot:hover{
@@ -109,6 +116,7 @@ li a {
   border: 3px solid $button-color;
   border-radius: 19px;
   box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
+  transform: translate(2px, 6px);
 }
 	
 
@@ -121,7 +129,6 @@ li a:hover{
 	box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); 
   transform: translate(2px, 6px);
   //background-color: lighten($body-color, 3%);
-  //transition: box-shadow 0.3s ease-in-out;
 
 }
 
@@ -150,6 +157,7 @@ footer svg:hover {
 	//color: $button-color;
 }
 
+// This is for javascript scroll
 
 html:not([data-scroll='0']) {
     	
@@ -160,9 +168,11 @@ html:not([data-scroll='0']) {
     	}
     
     	li a:hover {
-
-				transform: none;
-			}
+        transform: none;
+      }
+      .logo-spot:hover {
+        transform: none;
+      }
 }
 
 
