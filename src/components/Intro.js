@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import Textbox from "../components/textbox"
 import Fade from 'react-reveal/Fade';
 import { NiceButton } from './Button/Button'
-import avatarSVG from '../data/mike-avatar-v2.svg'
+import avatarSVG from '../data/smiley-green-avatar.svg'
 import resumePDF from '../data/mwiner-resume.pdf'
 
 const Intro = () => {
@@ -34,7 +34,7 @@ const Intro = () => {
     			  </div>
           </Fade>
 
-          <Fade right={isDesktop} bottom={isMobile}duration={1000} delay={800} distance="50px">
+          <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px">
     			  <div className='w-30-l w-40-m w-100 pa3'>
     			   	<a href={resumePDF} alt='/404'>
                   <img className='grow' src={avatarSVG} alt="My face avatar" width=''/>

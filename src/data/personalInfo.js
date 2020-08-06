@@ -52,7 +52,7 @@ export const projectsArray = [
 	{
 		ImagePath:'background-generator.jpg',
 		Name: "Background Linear Gradient Generator",	
-		Description: "A front-end web app made wit Javascript, HTML5 and CSS3",
+		Description: "A front-end web app made with Javascript, HTML5 and CSS3",
 		URL: "https://mikewiner.github.io/Background-generator/",
 		CodeBaseURL: "https://github.com/mikewiner/Background-generator",
 	},
