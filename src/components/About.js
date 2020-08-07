@@ -59,7 +59,7 @@ export default function About() {
             </Fade>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="60px">
               <div className='w-50-l f4-l f5 w-100 shadow-1 pa3 pr3 mr5'>
-          	    <Header headerText='I am Mike!' />
+          	    <Header headerText='I am Mike!'/>
                 <p className=''>{Blog}<a className='extLink no-underline' href={URL} target='__blank'> here!</a></p>
           	  </div>  
             </Fade>

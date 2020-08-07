@@ -29,8 +29,8 @@ const Intro = () => {
 
     			<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px">
             <div className='w-50-l w-50-m w-100 bg-white pa3 pt0 shadow-1'>
-    			 	  <h1 className='pt3 f2-l f3-m f4-ns f2 '>Mike Winer, Full-Stack Web Development, Digital Design, Adventure and more.</h1>
-    			    <p className='lh-copy'>Click <NiceButton className="pb2" href={resumePDF}>HERE</NiceButton> or my face for my <b>resume</b></p>
+    			 	  <h1 className='fw5 pt3 f2-l f3-m f4-ns f2 '>Mike Winer, Full-Stack Web Development, Digital Design, Adventure and more.</h1>
+    			    <span className='lh-copy relative flex inline-flex items-center'>Click&nbsp;<NiceButton className="pb2" href={resumePDF}>HERE</NiceButton>&nbsp;or my face for my resume</span>
     			  </div>
           </Fade>
 

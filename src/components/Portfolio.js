@@ -81,7 +81,7 @@ export default function Portfolio() {
   
                   return (
                     <div key={index} className='mt3 pa3 br2 shadow-2'>
-                      <h2 className=' mt0 mb3'>{Name}</h2>
+                      <h2 className='fw5 mt0 mb3'>{Name}</h2>
 
                       <div className='flex-l justify-around-l flex-m justify-around-m items-stretch w-100 h-auto-l'>           
                         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={600} distance="30px">
