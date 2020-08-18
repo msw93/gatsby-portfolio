@@ -84,7 +84,7 @@ li a {
 	padding: 10px 12px;
   color: black;
   margin-right: 1rem;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
 }
 
 li:last-child a {
@@ -92,8 +92,10 @@ li:last-child a {
 }
 
 .logo-spot {
+  margin:3px;
   padding: 3px;
-  border: 3px solid transparent;
+  border: 2px solid black;
+  border-radius: 8px;
   transition: transform .9s;
   //padding: 8px;
   img{
@@ -113,8 +115,8 @@ li:last-child a {
 
 .logo-spot:hover{
   //background-color: $button-color;
-  border: 3px solid $button-color;
-  border-radius: 19px;
+  border: 2px solid $button-color;
+  border-radius: 8px;
   box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
   transform: translate(2px, 6px);
 }
@@ -123,7 +125,7 @@ li:last-child a {
 li a:hover{
 	border-radius: 20px;
   //background-color: $button-color;
-  border: 3px solid $button-color;
+  border: 2px solid $button-color;
 	//color: white;
 
 	box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); 

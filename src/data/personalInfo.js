@@ -24,7 +24,7 @@ export const projectsArray = [
 	{
 		ImagePath:'smart-brain.jpg',
 		Name: "Smart Brain",	
-		Description: "Smart Brain, a face recognition full-stack web-app, made with React, Postgres, Node.js and Express.",
+		Description: "Smart Brain, a face recognition full-stack web-app, made with React, Machine Learning API, Postgres, Node.js and Express.",
 		URL: 'https://smart-brain-mwin.herokuapp.com/',
 		CodeBaseURL: "https://github.com/mikewiner/smart-brain",
 	},
@@ -36,9 +36,16 @@ export const projectsArray = [
 		CodeBaseURL: "https://github.com/mikewiner/origen-landing",
 	},
 	{
+		ImagePath:'rocketbird-snap.png',
+		Name: "RocketBird Javascript Game",	
+		Description: "A full-stack javascript game. Front-end was made with vanilla javascript with custom sprite design. The leaderboard back-end is a REST API, created with Node.js, Express and MongoDB. Give it a try!",
+		URL: 'https://mikewiner.github.io/rocketbird/',
+		CodeBaseURL: "https://github.com/mikewiner/flappy-bird-api",
+	},
+	{
 		ImagePath:'portfolio-gatsby.jpg',
 		Name: "Gatsby Portfolio",	
-		Description: "My porfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with Graphql. ",
+		Description: "My porfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with GraphQL. ",
 		URL: 'https://mikewiner.ca',
 		CodeBaseURL: "https://github.com/mikewiner/gatsby-portfolio",
 	},

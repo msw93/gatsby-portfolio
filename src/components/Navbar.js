@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade'
-import Logo from '../data/mw-logo2.svg'
+import Logo from '../data/svg/new-logo-nosquare.svg'
 
 
 //React hook I wrote for seting state to mobile! Good job Michael pat on the back.
