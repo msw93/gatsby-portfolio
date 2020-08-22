@@ -32,10 +32,10 @@ const Intro = () => {
     			 	  <h1 className='fw5 pt3 f2-l f3-m f4-ns f2 '>Mike Winer, Full-Stack Web Development, Digital Design, Adventure and more.</h1>
     			    <div className='ma2 flex inline-flex items-center'>
                 <div className='ma0'>Click&nbsp;</div>
-                <div className='flex'><NiceButton className="" href={resumePDF}>HERE</NiceButton>&nbsp;</div>  
-                <div className='ma0 dn dib-l '>or my face for my resume</div>
+                <div className='flex'><NiceButton className="" href={resumePDF}>Resume</NiceButton>&nbsp;</div>  
+                <div className='ma0 dn dib-l '>or my face for my resume!</div>
               </div>
-              <div className='ma0 dib dn-l '>or my face for my resume</div>
+              <div className='ma0 dib dn-l'>or my face for my resume!</div>
     			  </div>
           </Fade>
 

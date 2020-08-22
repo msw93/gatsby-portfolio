@@ -9,12 +9,14 @@ import Portfolio from '../components/Portfolio.js';
 
 const Home = ({data}) => ( 
   	 
-
+    
     <div>    
       <Helmet>
-        <meta lang="en" charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no, viewport-fit=cover" />
+        <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no, viewport-fit=cover" />
+        <html lang='en'/>
         <title>{data.site.siteMetadata.title}</title>
         <link rel="canonical" href="https://mikewiner.ca" />
+        <meta name="description" content={data.site.siteMetadata.description} />
       </Helmet>
 
       
@@ -33,6 +35,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }

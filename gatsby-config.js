@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mike Winer - Web Developer`,
-    description: "Full-Stack Web Developer from Toronto, Canada",
+    description: "Full-Stack Web Developer and Digital Designer from Toronto, Canada",
     author: "Mike Winer",
     keywords: [ "Web Developer", 'full Stack', 'front-end', 'back-end', 'javascript', 'html', 'css', 'python', 'react', 'gatsby'],
     siteUrl: "https://mikewiner.github.io/gatsby-portfolio/"

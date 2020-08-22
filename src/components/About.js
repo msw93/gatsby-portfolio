@@ -46,7 +46,7 @@ export default function About() {
       
       <div className='fillers relative flex justify-center'>
         <div className="separator"></div>
-        <p className="unselect absolute o-10 f-subheadline tc mt4 lh-s">About Me</p>
+        <p className="unselect absolute o-20 f-subheadline tc mt4 lh-s">About Me</p>
       </div>
 
       <section id='about' className='h-100-l h-100-m flex-l items-center-l flex-m items-center-m pa2 ma3 pb5 flex justify-center'>
