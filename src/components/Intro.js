@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { NiceButton } from './Button/Button'
 import avatarSVG from '../data/svg/avatar-new-squarelogo.svg'
-import resumePDF from '../data/mwiner-resume.pdf'
+import resumePDF from '../data/mike-winer-resume.pdf'
 
 const Intro = () => {
 
@@ -30,13 +30,18 @@ const Intro = () => {
     			<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px">
             <div className='w-50-l w-50-m w-100 bg-white pa3 pt0 shadow-1'>
     			 	  <h1 className='fw5 pt3 f2-l f3-m f4-ns f2 '>Mike Winer, Full-Stack Web Development, Digital Design, Adventure and more.</h1>
-    			    <span className='lh-copy relative flex inline-flex items-center'>Click&nbsp;<NiceButton className="pb2" href={resumePDF}>HERE</NiceButton>&nbsp;or my face for my resume</span>
+    			    <div className='ma2 flex inline-flex items-center'>
+                <div className='ma0'>Click&nbsp;</div>
+                <div className='flex'><NiceButton className="" href={resumePDF}>HERE</NiceButton>&nbsp;</div>  
+                <div className='ma0 dn dib-l '>or my face for my resume</div>
+              </div>
+              <div className='ma0 dib dn-l '>or my face for my resume</div>
     			  </div>
           </Fade>
 
           <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={800} distance="50px">
     			  <div className='w-20-xl w-30-l w-40-m w-100 pa3'>
-    			   	<a href={resumePDF} alt='/404'>
+    			   	<a href={resumePDF} >
                   <img className='grow' src={avatarSVG} alt="My face avatar" width=''/>
     			   	</a>
     			  </div>

@@ -1,6 +1,6 @@
 import React from "react"
-import Header from "../components/header.js"
-import Textbox from "../components/textbox.js"
+import Header from "../components/Header.js"
+import Textbox from "../components/Textbox.js"
 import Fade from 'react-reveal/Fade';
 import { NiceButton, LocalButton} from './Button/Button'
 

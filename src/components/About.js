@@ -14,7 +14,7 @@ export default function About() {
     file(relativePath: {eq: "DevProPic1.jpg"}) {
       childImageSharp {
         fluid (maxWidth: 400, quality: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
         fixed(
           width: 280
