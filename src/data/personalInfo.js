@@ -66,7 +66,7 @@ export const projectsArray = [
 	{
 		ImagePath:'microhalos.jpg',
 		Name: "Cosmology Research Project",	
-		Description: "NSERC scholarship funded reasearch at The Canadian Institute for Theoretical Astrophysics in Dark Matter Microhalos. N-body simulations done with Scienet, Canada's largest supercomputer center. Data visualization and analysis done with Python.",
+		Description: "NSERC scholarship funded reasearch at The Canadian Institute for Theoretical Astrophysics in Dark Matter Microhalos. N-body simulations done with Scinet, Canada's largest supercomputer center. Data visualization and analysis done with Python.",
 		URL: "https://github.com/mikewiner/microhalos",
 		CodeBaseURL: "https://github.com/mikewiner/microhalos",
 	},
