@@ -6,6 +6,8 @@ import FooterSelfmade from "../components/FooterSelfmade.js";
 import About from '../components/About.js';
 import Contact from '../components/Contact.js';
 import Portfolio from '../components/Portfolio.js';
+import ClientOnly from '../components/ClientOnly'
+
 
 const Home = ({data}) => ( 
   	 
@@ -19,13 +21,14 @@ const Home = ({data}) => (
         <meta name="description" content={data.site.siteMetadata.description} />
       </Helmet>
 
-      
-  		<Navbar />
-      <Intro />
-      <About />
-  		<Portfolio />
-  		<Contact />
-      <FooterSelfmade />
+      <ClientOnly>
+        <Navbar />
+        <Intro />
+        <About />
+        <Portfolio />
+        <Contact />
+        <FooterSelfmade />
+      </ClientOnly>
 
   	</div>
 );
