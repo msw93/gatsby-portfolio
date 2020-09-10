@@ -18,7 +18,7 @@ export const projectsArray = [
 		ImagePath:'optometry-website.jpg',
 		Name: "Optometry Business Website",	
 		Description: "Fully responsive buisness website for local Optometrist. Made with Gatsby, React, and data querying with GraphQL. Customizable blogs and content implemented with headless content managment system - Netlify CMS. Fully custom logo and icon design!",
-		URL: 'https://drwiner.netlify.app',
+		URL: 'https://drwiner.ca',
 		CodeBaseURL: "https://github.com/mikewiner/",
 	},
 	{
