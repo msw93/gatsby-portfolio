@@ -17,7 +17,7 @@ export const projectsArray = [
 	{
 		ImagePath:'optometry-website.jpg',
 		Name: "Optometry Business Website",	
-		Description: "Fully responsive buisness website for local Optometrist. Made with Gatsby, React, and data querying with GraphQL. Customizable blogs and content implemented with headless content managment system - Netlify CMS. Fully custom logo and icon design!",
+		Description: "Fully responsive business website for local Optometrist. Made with Gatsby, React, and data querying with GraphQL. Customizable blogs and content implemented with headless content management system - Netlify CMS. Fully custom logo and icon design!",
 		URL: 'https://drwiner.ca',
 		CodeBaseURL: "https://github.com/mikewiner/",
 	},
@@ -45,7 +45,7 @@ export const projectsArray = [
 	{
 		ImagePath:'portfolio-gatsby.jpg',
 		Name: "Gatsby Portfolio",	
-		Description: "My porfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with GraphQL. ",
+		Description: "My portfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with GraphQL. ",
 		URL: 'https://mikewiner.ca',
 		CodeBaseURL: "https://github.com/mikewiner/gatsby-portfolio",
 	},
@@ -66,7 +66,7 @@ export const projectsArray = [
 	{
 		ImagePath:'microhalos.jpg',
 		Name: "Cosmology Research Project",	
-		Description: "NSERC scholarship funded reasearch at The Canadian Institute for Theoretical Astrophysics in Dark Matter Microhalos. N-body simulations done with Scinet, Canada's largest supercomputer center. Data visualization and analysis done with Python.",
+		Description: "NSERC scholarship funded research at The Canadian Institute for Theoretical Astrophysics in Dark Matter Microhalos. N-body simulations done with Scinet, Canada's largest supercomputer center. Data visualization and analysis done with Python.",
 		URL: "https://github.com/mikewiner/microhalos",
 		CodeBaseURL: "https://github.com/mikewiner/microhalos",
 	},
