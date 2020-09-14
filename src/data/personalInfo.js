@@ -15,11 +15,25 @@ export const projects = {
 
 export const projectsArray = [
 	{
+		ImagePath:'blog-dark.jpg',
+		Name: "Minimalism Blog",	
+		Description: "Lightweight, minimal UI blog. Made with Gatsby, React and GraphQL for data querying. A PWA (Progressive Web App) with offline support, styling is CSS-in-JS(Emotion). Perfect score with Google Lighthouse Audit. Google analytics, SEO component and Disqus comments. Toggle-able Light and Dark Mode.",
+		URL: 'http://mikes-blog.netlify.app/',
+		CodeBaseURL: "https://github.com/mikewiner/blog-scratch",
+	},
+	{
 		ImagePath:'optometry-website.jpg',
-		Name: "Optometry Business Website",	
+		Name: "Optometry Business Website",
 		Description: "Fully responsive business website for local Optometrist. Made with Gatsby, React, and data querying with GraphQL. Customizable blogs and content implemented with headless content management system - Netlify CMS. Fully custom logo and icon design!",
 		URL: 'https://drwiner.ca',
 		CodeBaseURL: "https://github.com/mikewiner/",
+	},
+	{
+		ImagePath:'portfolio-gatsby.jpg',
+		Name: "Gatsby Portfolio",	
+		Description: "My portfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with GraphQL. ",
+		URL: 'https://mikewiner.ca',
+		CodeBaseURL: "https://github.com/mikewiner/gatsby-portfolio",
 	},
 	{
 		ImagePath:'smart-brain.jpg',
@@ -41,13 +55,6 @@ export const projectsArray = [
 		Description: "A full-stack javascript game. Front-end was made with vanilla javascript with custom sprite design. The leaderboard back-end is a REST API, created with Node.js, Express and MongoDB. Give it a try!",
 		URL: 'https://mikewiner.github.io/rocketbird/',
 		CodeBaseURL: "https://github.com/mikewiner/flappy-bird-api",
-	},
-	{
-		ImagePath:'portfolio-gatsby.jpg',
-		Name: "Gatsby Portfolio",	
-		Description: "My portfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with GraphQL. ",
-		URL: 'https://mikewiner.ca',
-		CodeBaseURL: "https://github.com/mikewiner/gatsby-portfolio",
 	},
 	{
 		ImagePath:'kanji-dictionary.jpg',
