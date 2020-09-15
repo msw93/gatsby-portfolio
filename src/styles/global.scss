@@ -94,8 +94,8 @@ li:last-child a {
 .logo-spot {
   margin:3px;
   padding: 3px;
-  border: 2px solid black;
-  border-radius: 8px;
+  border: 2px solid transparent;
+  // border-radius: 8px;
   transition: transform .9s;
   //padding: 8px;
   img{

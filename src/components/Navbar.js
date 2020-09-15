@@ -91,7 +91,7 @@ export default function Navbar() {
         {toggle === false ?
           <div id="mainListDiv" className="">
             <ul className='navLinks'>
-              <li className=""><Link to='#'><img width='60px' src={Logo} alt='logo'/></Link></li>
+              <li className=""><Link to='#'><img width='40px' src={Logo} alt='logo'/></Link></li>
               <a href='#0' onClick={handleClick} onKeyDown={handleClick} className='navTrigger'>
                 <i></i>
                 <i></i>
@@ -124,7 +124,7 @@ export default function Navbar() {
   	 <nav id='navbar' className='f3-l f4-m f5 fw7'>
       <Fade className='' down={true} duration={1000} delay={300} distance="30px">
   	   	<ul className='db flex-l justify-around-l flex-m justify-around-m items-center'>
-          <div className='logo-spot'><Link to='#'><img width='60px' src={Logo} alt='logo'/></Link></div>
+          <div className='logo-spot'><Link to='#'><img width='40px' src={Logo} alt='logo'/></Link></div>
 
           <div className='nav-links'>
             <li><Link to="#">Home</Link></li>

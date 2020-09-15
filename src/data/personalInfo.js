@@ -29,9 +29,9 @@ export const projectsArray = [
 		CodeBaseURL: "https://github.com/mikewiner/",
 	},
 	{
-		ImagePath:'portfolio-gatsby.jpg',
+		ImagePath:'gatsby-portfolio.jpg',
 		Name: "Gatsby Portfolio",	
-		Description: "My portfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with GraphQL. ",
+		Description: "My portfolio website aka this website! Front-end project, made with Gatsby, SASS and data querying with GraphQL. Flicker Of Unstyled Content (FOUC) fixed with reusable component. Custom avatar and logo design.",
 		URL: 'https://mikewiner.ca',
 		CodeBaseURL: "https://github.com/mikewiner/gatsby-portfolio",
 	},
